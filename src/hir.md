@@ -125,9 +125,9 @@ that `n` must be some HIR expression, you can do
 [Expr]: https://doc.rust-lang.org/nightly/nightly-rustc/rustc_hir/struct.Expr.html
 
 Finally, you can use the HIR map to find the parents of nodes, via
-calls like [`tcx.hir().get_parent(n)`][get_parent].
+calls like [`tcx.hir().get_parent_item(n)`][get_parent_item].
 
-[get_parent]: https://doc.rust-lang.org/nightly/nightly-rustc/rustc_middle/hir/map/struct.Map.html#method.get_parent
+[get_parent_item]: https://doc.rust-lang.org/nightly/nightly-rustc/rustc_middle/hir/map/struct.Map.html#method.get_parent_item
 
 ## HIR Bodies
 

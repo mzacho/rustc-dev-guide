@@ -1,6 +1,6 @@
 # `TypeFoldable` and `TypeFolder`
 
-In the previous chapter we discussed instantiating binders. This must involves looking at everything inside of a `Early/Binder`
+In the previous chapter we discussed instantiating binders. This must involve looking at everything inside of a `Early/Binder`
 to find any usages of the bound vars in order to replace them. Binders can wrap an arbitrary rust type `T` not just a `Ty` so
 how do we implement the `instantiate` methods on the `Early/Binder` types.
 
@@ -101,4 +101,3 @@ something from the list of substitutions, otherwise recursively process the type
 calls
 [ty_for_param](https://github.com/rust-lang/rust/blob/75ff3110ac6d8a0259023b83fd20d7ab295f8dd6/src/librustc_middle/ty/subst.rs#L552-L587)
 and all that does is index into the list of substitutions with the index of the `Param`.
-
